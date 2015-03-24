@@ -1,0 +1,127 @@
+﻿@model DotNet.Highcharts.Highcharts
+@Scripts.Render("~/bundles/jquery")
+
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<p>
+    <br />
+</p>
+<a class="btn btn-info" @Html.ActionLink("Back To Resident List", "Index", "Patients")</a>
+@*<h4>@Html.ActionLink("<< Back To Resident List", "Index", "Patients")</h4>*@
+<p>
+    <br />
+</p>
+
+
+@(Model)
+
+<table class="table table-striped table-hover ">
+    <thead>
+        <tr >
+            <th>Line Name</th>
+            <th>Residents Score</th>
+            <th>Definition</th>
+            <th>Maximum Score</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr >
+            
+            <td style="color:darkblue"<strong>Daily Total</strong></td>
+            <td><strong>Cumulative daily score over entire observation period</strong></td>
+            <td><strong>Graphs progress or decline of residents health</strong></td>
+            <td align="center"><strong>70</strong></td>
+        </tr>
+        <tr>
+            <td style="color:darkmagenta"<strong>Sleep Pattern</strong></td>
+            <td><strong>Daily score recorded</strong></td>
+            <td><strong>Graphs level of sleep pattern</strong></td>
+            <td align ="center"><strong>20</strong></td>
+</tr>
+        <tr >
+            <td style="color:orange"<strong>Appetite</strong></td>
+            <td><strong>Daily score recorded</strong></td>
+            <td><strong>Graphs appetite level</strong></td>
+            <td align="center"><strong>20</strong><td>
+        </tr>
+        <tr >
+            <td style="color:brown"<strong>Awareness</strong></td>
+            <td><strong>Daily score recorded</strong></td>
+            <td><strong>Measures residents awareness</strong></td>
+            <td align="center"><strong>20</strong></td>
+        </tr>
+        <tr >
+            <td style=" color:green"<strong>Daily Average</strong></td>
+            <td><strong>Average daily score over entire observation period</strong></td>
+            <td><strong>Details average score</strong></td>
+            <td align="center"><strong>20</strong></td>
+        </tr>
+        </tbody>
+</table> 
+<div>
+    @*<h4> Residents Details  &  Health Score </h4>
+   
+
+    <table class="table table-striped table-hover ">
+
+        <tr>
+            <th>Name</th>
+            <td>@ViewBag.Name</td>
+            <th>Best Day</th>
+            <td>@ViewBag.best</td>
+
+        </tr>
+        <tr>
+            <th>Gender</th>
+            <td>@ViewBag.a</td>
+            <th>Average Day</th>
+            <td>@ViewBag.avg</td>
+        </tr>
+        <tr>
+            <th>Doctor</th>
+            <td>@ViewBag.c</td>
+            <th>Worst Day</th>
+            <td>@ViewBag.worst</td>
+
+
+        </tr>
+        <tr>
+            <th>Allergies</th>
+            <td>TBC</td>
+            <th>Total</th>
+            <td>@ViewBag.tot</td>
+        </tr>
+
+    </table>*@
+        @*<dl class="form-horizontal">
+                <dt>
+                    Name: @ViewBag.Name
+                </dt>
+                <dt>
+                    Gender: @ViewBag.a
+                </dt>
+                <dt>
+                    Doctor's Name: @ViewBag.c
+                </dt>
+                <dt>
+                    Allergies: TBA
+                </dt>
+                <dt>
+                    Best recorded health score: @ViewBag.best
+                </dt>
+                <dt>
+                    Average recorded health score: @ViewBag.avg
+                </dt>
+                <dt>
+                    Worst recorded health score: @ViewBag.worst
+                </dt>
+
+            </dl>*@
+
+
+
+    </div>
+
+ 

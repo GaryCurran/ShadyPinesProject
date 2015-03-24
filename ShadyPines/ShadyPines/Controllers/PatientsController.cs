@@ -12,7 +12,7 @@ using DotNet.Highcharts.Options;
 using DotNet.Highcharts.Helpers;
 using DotNet.Highcharts.Enums;
 using System.Drawing;
-// This is where all the magic happens!!!!!!
+// This is where all the magic happens!!!!!!d
 namespace ShadyPines.Controllers
 {
     public class PatientsController : Controller
